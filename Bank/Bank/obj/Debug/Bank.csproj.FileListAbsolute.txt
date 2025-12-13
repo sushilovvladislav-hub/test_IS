@@ -1,0 +1,7 @@
+C:\college\temp\Bank\Bank\bin\Debug\Bank.exe.config
+C:\college\temp\Bank\Bank\bin\Debug\Bank.exe
+C:\college\temp\Bank\Bank\bin\Debug\Bank.pdb
+C:\college\temp\Bank\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\college\temp\Bank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\college\temp\Bank\Bank\obj\Debug\Bank.exe
+C:\college\temp\Bank\Bank\obj\Debug\Bank.pdb

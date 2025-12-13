@@ -1,0 +1,90 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\college\\temp\\Bank\\BankTests\\BankTests.csproj": {}
+  },
+  "projects": {
+    "C:\\college\\temp\\Bank\\BankTests\\BankTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\college\\temp\\Bank\\BankTests\\BankTests.csproj",
+        "projectName": "BankTests",
+        "projectPath": "C:\\college\\temp\\Bank\\BankTests\\BankTests.csproj",
+        "packagesPath": "C:\\Users\\Tetragon\\.nuget\\packages\\",
+        "outputPath": "C:\\college\\temp\\Bank\\BankTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tetragon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net481"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net481": {
+            "targetAlias": "net481",
+            "projectReferences": {
+              "C:\\college\\temp\\Bank\\Bank\\Bank.csproj": {
+                "projectPath": "C:\\college\\temp\\Bank\\Bank\\Bank.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net481": {
+          "targetAlias": "net481",
+          "dependencies": {
+            "MSTest": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\college\\temp\\Bank\\Bank\\Bank.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\college\\temp\\Bank\\Bank\\Bank.csproj",
+        "projectName": "Bank",
+        "projectPath": "C:\\college\\temp\\Bank\\Bank\\Bank.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
