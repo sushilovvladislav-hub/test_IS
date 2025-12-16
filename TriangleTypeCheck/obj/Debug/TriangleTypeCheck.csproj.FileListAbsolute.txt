@@ -1,0 +1,11 @@
+C:\Users\Public\sus\TriangleTypeCheck\bin\Debug\TriangleTypeCheck.exe.config
+C:\Users\Public\sus\TriangleTypeCheck\bin\Debug\TriangleTypeCheck.exe
+C:\Users\Public\sus\TriangleTypeCheck\bin\Debug\TriangleTypeCheck.pdb
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.AssemblyReference.cache
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.SuggestedBindingRedirects.cache
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.Properties.Resources.resources
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.GenerateResource.cache
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.CoreCompileInputs.cache
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.exe
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.pdb
+C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.TriangleTypeCheck.resources
