@@ -9,3 +9,13 @@ C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.CoreCom
 C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.exe
 C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.pdb
 C:\Users\Public\sus\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.TriangleTypeCheck.resources
+C:\college\test_IS\TriangleTypeCheck\bin\Debug\TriangleTypeCheck.exe.config
+C:\college\test_IS\TriangleTypeCheck\bin\Debug\TriangleTypeCheck.exe
+C:\college\test_IS\TriangleTypeCheck\bin\Debug\TriangleTypeCheck.pdb
+C:\college\test_IS\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.AssemblyReference.cache
+C:\college\test_IS\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.TriangleTypeCheck.resources
+C:\college\test_IS\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.Properties.Resources.resources
+C:\college\test_IS\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.GenerateResource.cache
+C:\college\test_IS\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.csproj.CoreCompileInputs.cache
+C:\college\test_IS\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.exe
+C:\college\test_IS\TriangleTypeCheck\obj\Debug\TriangleTypeCheck.pdb
