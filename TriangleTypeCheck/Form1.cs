@@ -26,10 +26,6 @@ namespace TriangleTypeCheck
             tBoxSizeB.KeyPress += TextBox_KeyPress;
             tBoxSizeC.KeyPress += TextBox_KeyPress;
 
-            tBoxSizeA.Validating += TextBox_Validating;
-            tBoxSizeB.Validating += TextBox_Validating;
-            tBoxSizeC.Validating += TextBox_Validating;
-
         }
 
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e) 
@@ -50,39 +46,31 @@ namespace TriangleTypeCheck
             {
                 if (textBox.SelectionStart == 0 || textBox.Text.Contains("."))
                 {
-                    e.Handled |= true;
+                    e.Handled = true;
                     return; 
                 }
             }
 
+            if (e.KeyChar == '0')
+            {
+                if (textBox.SelectionStart == 0 && textBox.Text.StartsWith("0"))
+                {
+                    e.Handled = true;
+                    return;
+                }
+
+            }
+            
+            if (isDigit && textBox.Text == "0" && textBox.SelectionStart == 1)
+            {
+                textBox.Text = e.KeyChar.ToString();
+                textBox.SelectionStart = 1;
+                e.Handled = true;
+                return;
+            }
             
         }
-
-        private void TextBox_Validating(object sender, System.ComponentModel.CancelEventArgs e) 
-        {
-            TextBox textBox = sender as TextBox;
-
-            if (string.IsNullOrEmpty(textBox.Text))
-            {
-                return;
-            }    
-                
-
-            if (!double.TryParse(textBox.Text.Replace(",", "."), out double value)) 
-            {
-                MessageBox.Show("Пожалуйста, введите корректное число!", "Ошибка ввода");
-                
-                textBox.SelectAll();
-                e.Cancel = true;
-                return;
-            }
-
-            if (value <= 0) 
-            {
-                MessageBox.Show("Число должно быть больше нуля!", "Ошибка ввода");
-            }
-
-        }
+           
 
         private void btnExit_Click(object sender, EventArgs e)
         {

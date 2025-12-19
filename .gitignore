@@ -1,0 +1,40 @@
+## Игнорировать временные файлы Visual Studio, результаты сборки
+## и файлы, сгенерированные популярными расширениями.
+
+# Файлы конкретного пользователя
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Папка Visual Studio
+.vs/
+*.vsidx
+*.vsdir
+
+# Результаты сборки
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Файлы NuGet
+[Nn]u[Gg]et.exe
+*.nupkg
+packages/
+
+# Резервные копии и файлы конфигурации
+*.[Cc]ache
+*.bak
+*.tmp
+*.log
+
+# Файлы операционных систем
+Thumbs.db
+Desktop.ini
