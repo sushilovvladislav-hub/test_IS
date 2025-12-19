@@ -77,6 +77,21 @@ namespace TriangleTypeCheck
             Application.Exit();
         }
 
-        
+        private void btnDefine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            tBoxSizeA.Clear();
+            tBoxSizeB.Clear();
+            tBoxSizeC.Clear();
+
+            lblRes.Text = "Ожидание ввода значений...";
+
+            pBoxRes = null;
+
+        }
     }
 }

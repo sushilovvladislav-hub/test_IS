@@ -33,8 +33,8 @@
             this.tBoxSizeB = new System.Windows.Forms.TextBox();
             this.tBoxSizeC = new System.Windows.Forms.TextBox();
             this.grpBoxInput = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDefine = new System.Windows.Forms.Button();
             this.lblSizeC = new System.Windows.Forms.Label();
             this.lblSizeB = new System.Windows.Forms.Label();
             this.lblSizeA = new System.Windows.Forms.Label();
@@ -77,8 +77,8 @@
             // grpBoxInput
             // 
             this.grpBoxInput.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grpBoxInput.Controls.Add(this.button2);
-            this.grpBoxInput.Controls.Add(this.button1);
+            this.grpBoxInput.Controls.Add(this.btnClear);
+            this.grpBoxInput.Controls.Add(this.btnDefine);
             this.grpBoxInput.Controls.Add(this.lblSizeC);
             this.grpBoxInput.Controls.Add(this.lblSizeB);
             this.grpBoxInput.Controls.Add(this.lblSizeA);
@@ -93,25 +93,27 @@
             this.grpBoxInput.TabStop = false;
             this.grpBoxInput.Text = "Входные данные";
             // 
-            // button2
+            // btnClear
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(169, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 52);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Очистить";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.SystemColors.Window;
+            this.btnClear.Location = new System.Drawing.Point(169, 165);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(145, 52);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Очистить";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // button1
+            // btnDefine
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(10, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 52);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Определить";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDefine.BackColor = System.Drawing.SystemColors.Window;
+            this.btnDefine.Location = new System.Drawing.Point(10, 165);
+            this.btnDefine.Name = "btnDefine";
+            this.btnDefine.Size = new System.Drawing.Size(145, 52);
+            this.btnDefine.TabIndex = 5;
+            this.btnDefine.Text = "Определить";
+            this.btnDefine.UseVisualStyleBackColor = false;
+            this.btnDefine.Click += new System.EventHandler(this.btnDefine_Click);
             // 
             // lblSizeC
             // 
@@ -191,9 +193,9 @@
             this.lblRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblRes.Location = new System.Drawing.Point(30, 213);
             this.lblRes.Name = "lblRes";
-            this.lblRes.Size = new System.Drawing.Size(204, 25);
+            this.lblRes.Size = new System.Drawing.Size(297, 25);
             this.lblRes.TabIndex = 6;
-            this.lblRes.Text = "(Тип треугольника)";
+            this.lblRes.Text = "Ожидание ввода значений...";
             // 
             // grBoxRes
             // 
@@ -242,8 +244,8 @@
         private System.Windows.Forms.Label lblSizeA;
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.PictureBox pBoxRes;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDefine;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblRes;
         private System.Windows.Forms.GroupBox grBoxRes;
