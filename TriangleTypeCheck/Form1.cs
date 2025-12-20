@@ -17,7 +17,7 @@ namespace TriangleTypeCheck
         {
             InitializeComponent();
             SetupValidation();
-            
+
         }
 
         private void SetupValidation()
@@ -28,12 +28,12 @@ namespace TriangleTypeCheck
 
         }
 
-        private void TextBox_KeyPress(object sender, KeyPressEventArgs e) 
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             TextBox textBox = sender as TextBox;
 
             bool isDigit = char.IsDigit(e.KeyChar);
-            bool isControl = char .IsControl(e.KeyChar);
+            bool isControl = char.IsControl(e.KeyChar);
             bool isDot = e.KeyChar == '.';
 
             if (!isDigit && !isControl && !isDot)
@@ -47,7 +47,7 @@ namespace TriangleTypeCheck
                 if (textBox.SelectionStart == 0 || textBox.Text.Contains("."))
                 {
                     e.Handled = true;
-                    return; 
+                    return;
                 }
             }
 
@@ -60,7 +60,7 @@ namespace TriangleTypeCheck
                 }
 
             }
-            
+
             if (isDigit && textBox.Text == "0" && textBox.SelectionStart == 1)
             {
                 textBox.Text = e.KeyChar.ToString();
@@ -68,9 +68,9 @@ namespace TriangleTypeCheck
                 e.Handled = true;
                 return;
             }
-            
+
         }
-           
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -79,9 +79,44 @@ namespace TriangleTypeCheck
 
         private void btnDefine_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(tBoxSizeA.Text) ||
+                string.IsNullOrWhiteSpace(tBoxSizeB.Text) ||
+                string.IsNullOrWhiteSpace(tBoxSizeC.Text))
+            {
 
+                MessageBox.Show("Пожалуйста, введите все три стороны треугольника",
+                    "Внимание",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            double SideA = double.Parse(tBoxSizeA.Text);
+            double SideB = double.Parse(tBoxSizeB.Text);
+            double SideC = double.Parse(tBoxSizeC.Text);
+
+            if (SideA + SideB <= SideC || SideA + SideC <= SideB || SideB + SideC <= SideA)
+            {
+                MessageBox.Show("Такого треугольника не существует!\n" +
+                                "Сумма любых двух сторон должна быть больше третьей.",
+                                "Ошибка",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+
+                lblRes.Text = "Треугольник не существует";
+                return;
+            }
+
+            string triangleType = DetermineTriangleType(SideA, SideB, SideC);
+
+            lblRes.Text = triangleType;
         }
 
+        private string DetermineTriangleType(double SideA, double SideB, double SideC)
+        {
+            return "test";
+        }
         private void btnClear_Click(object sender, EventArgs e)
         {
             tBoxSizeA.Clear();

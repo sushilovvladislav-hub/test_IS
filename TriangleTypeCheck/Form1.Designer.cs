@@ -191,7 +191,7 @@
             // 
             this.lblRes.AutoSize = true;
             this.lblRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblRes.Location = new System.Drawing.Point(30, 213);
+            this.lblRes.Location = new System.Drawing.Point(6, 213);
             this.lblRes.Name = "lblRes";
             this.lblRes.Size = new System.Drawing.Size(297, 25);
             this.lblRes.TabIndex = 6;
