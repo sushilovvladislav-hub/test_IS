@@ -115,7 +115,44 @@ namespace TriangleTypeCheck
 
         private string DetermineTriangleType(double SideA, double SideB, double SideC)
         {
-            return "test";
+            double[] sides = { SideA, SideB, SideC };
+            Array.Sort(sides);
+
+            double s1 = sides[0];
+            double s2 = sides[1];
+            double s3 = sides[2];
+
+            const double epsilon = 1e-9;
+
+            double s1_sq = s1 * s1;
+            double s2_sq = s2 * s2;
+            double s3_sq = s3 * s3;
+
+            double sumSmallSquares = s1_sq + s2_sq;
+
+            if (Math.Abs(s1 - s2) < epsilon && Math.Abs(s2 - s3) < epsilon)
+            {
+                return "Равносторонний треугольник";
+            }
+            if (Math.Abs(s1 - s2) < epsilon || Math.Abs(s1 - s3) < epsilon || Math.Abs(s2 - s3) < epsilon) 
+            {
+                return "Равнобедренный треугольник";
+            }
+            if (Math.Abs(s3_sq - sumSmallSquares) < epsilon)
+            {
+                return "Прямоугольный треугольник";
+            }
+            if (s3_sq > sumSmallSquares) 
+            {
+                return "Тупоугольный треугольник";
+            }
+            if (s3_sq < sumSmallSquares)
+            {
+                return "Остроугольный треугольник";
+            }
+
+            return "Ошибка определения типа";
+
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
