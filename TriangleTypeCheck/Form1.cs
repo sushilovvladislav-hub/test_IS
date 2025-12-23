@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -132,6 +133,7 @@ namespace TriangleTypeCheck
 
             if (Math.Abs(s1 - s2) < epsilon && Math.Abs(s2 - s3) < epsilon)
             {
+                pBoxRes.Image = Properties.Resources.sides_3;
                 return "Равносторонний треугольник";
             }
             if (Math.Abs(s1 - s2) < epsilon || Math.Abs(s1 - s3) < epsilon || Math.Abs(s2 - s3) < epsilon) 
@@ -162,8 +164,14 @@ namespace TriangleTypeCheck
 
             lblRes.Text = "Ожидание ввода значений...";
 
-            pBoxRes = null;
+            if (pBoxRes.Image != null) 
+            {
+                pBoxRes.Image.Dispose();
+                pBoxRes.Image = null;
+            }
 
         }
+
+       
     }
 }

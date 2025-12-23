@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TriangleTypeCheck));
             this.tBoxSizeA = new System.Windows.Forms.TextBox();
             this.tBoxSizeB = new System.Windows.Forms.TextBox();
             this.tBoxSizeC = new System.Windows.Forms.TextBox();
@@ -179,11 +178,11 @@
             // 
             // pBoxRes
             // 
-            this.pBoxRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pBoxRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBoxRes.ImageLocation = "";
-            this.pBoxRes.Location = new System.Drawing.Point(35, 30);
+            this.pBoxRes.Location = new System.Drawing.Point(59, 30);
             this.pBoxRes.Name = "pBoxRes";
-            this.pBoxRes.Size = new System.Drawing.Size(306, 182);
+            this.pBoxRes.Size = new System.Drawing.Size(244, 182);
             this.pBoxRes.TabIndex = 4;
             this.pBoxRes.TabStop = false;
             // 
@@ -191,7 +190,7 @@
             // 
             this.lblRes.AutoSize = true;
             this.lblRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblRes.Location = new System.Drawing.Point(6, 213);
+            this.lblRes.Location = new System.Drawing.Point(33, 213);
             this.lblRes.Name = "lblRes";
             this.lblRes.Size = new System.Drawing.Size(297, 25);
             this.lblRes.TabIndex = 6;
@@ -218,7 +217,6 @@
             this.Controls.Add(this.grBoxRes);
             this.Controls.Add(this.pnlHead);
             this.Controls.Add(this.grpBoxInput);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TriangleTypeCheck";
             this.Text = "Triangle Type Check";
             this.grpBoxInput.ResumeLayout(false);

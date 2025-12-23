@@ -63,9 +63,9 @@ namespace TriangleTypeCheck.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap r_triangle {
+        internal static System.Drawing.Bitmap sides_3 {
             get {
-                object obj = ResourceManager.GetObject("r_triangle", resourceCulture);
+                object obj = ResourceManager.GetObject("sides_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
