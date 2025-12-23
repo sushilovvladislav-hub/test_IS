@@ -3140,11 +3140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\college\\temp\\Bank\\BankTests\\BankTests.csproj",
+      "projectUniqueName": "C:\\college\\test_IS\\Bank\\BankTests\\BankTests.csproj",
       "projectName": "BankTests",
-      "projectPath": "C:\\college\\temp\\Bank\\BankTests\\BankTests.csproj",
+      "projectPath": "C:\\college\\test_IS\\Bank\\BankTests\\BankTests.csproj",
       "packagesPath": "C:\\Users\\Tetragon\\.nuget\\packages\\",
-      "outputPath": "C:\\college\\temp\\Bank\\BankTests\\obj\\",
+      "outputPath": "C:\\college\\test_IS\\Bank\\BankTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3166,8 +3166,8 @@
         "net481": {
           "targetAlias": "net481",
           "projectReferences": {
-            "C:\\college\\temp\\Bank\\Bank\\Bank.csproj": {
-              "projectPath": "C:\\college\\temp\\Bank\\Bank\\Bank.csproj"
+            "C:\\college\\test_IS\\Bank\\Bank\\Bank.csproj": {
+              "projectPath": "C:\\college\\test_IS\\Bank\\Bank\\Bank.csproj"
             }
           }
         }

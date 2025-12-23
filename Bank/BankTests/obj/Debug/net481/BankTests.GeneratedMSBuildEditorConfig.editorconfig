@@ -1,7 +1,7 @@
 is_global = true
 build_property.IsMSTestTestAdapterReferenced = true
 build_property.RootNamespace = BankTests
-build_property.ProjectDir = C:\college\temp\Bank\BankTests\
+build_property.ProjectDir = C:\college\test_IS\Bank\BankTests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

@@ -42,6 +42,8 @@ namespace BankTests
             {
                 // Assert
                 StringAssert.Contains(e.Message, BankAccount.DebitAmountLessThanZeroMessage);
+
+                return;
             }
 
             Assert.Fail("The expected exception was not thrown.");
@@ -65,6 +67,8 @@ namespace BankTests
             {
                 // Assert
                 StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
+
+                return;
             }
 
             Assert.Fail("The expected exception was not thrown.");

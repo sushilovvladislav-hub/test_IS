@@ -5,3 +5,10 @@ C:\college\temp\Bank\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
 C:\college\temp\Bank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
 C:\college\temp\Bank\Bank\obj\Debug\Bank.exe
 C:\college\temp\Bank\Bank\obj\Debug\Bank.pdb
+C:\college\test_IS\Bank\Bank\bin\Debug\Bank.exe.config
+C:\college\test_IS\Bank\Bank\bin\Debug\Bank.exe
+C:\college\test_IS\Bank\Bank\bin\Debug\Bank.pdb
+C:\college\test_IS\Bank\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\college\test_IS\Bank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\college\test_IS\Bank\Bank\obj\Debug\Bank.exe
+C:\college\test_IS\Bank\Bank\obj\Debug\Bank.pdb
