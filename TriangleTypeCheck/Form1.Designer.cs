@@ -178,11 +178,11 @@
             // 
             // pBoxRes
             // 
-            this.pBoxRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBoxRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pBoxRes.ImageLocation = "";
-            this.pBoxRes.Location = new System.Drawing.Point(59, 30);
+            this.pBoxRes.Location = new System.Drawing.Point(38, 30);
             this.pBoxRes.Name = "pBoxRes";
-            this.pBoxRes.Size = new System.Drawing.Size(244, 182);
+            this.pBoxRes.Size = new System.Drawing.Size(292, 182);
             this.pBoxRes.TabIndex = 4;
             this.pBoxRes.TabStop = false;
             // 

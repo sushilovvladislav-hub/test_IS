@@ -136,20 +136,24 @@ namespace TriangleTypeCheck
                 pBoxRes.Image = Properties.Resources.sides_3;
                 return "Равносторонний треугольник";
             }
-            if (Math.Abs(s1 - s2) < epsilon || Math.Abs(s1 - s3) < epsilon || Math.Abs(s2 - s3) < epsilon) 
+            if (Math.Abs(s1 - s2) < epsilon || Math.Abs(s1 - s3) < epsilon || Math.Abs(s2 - s3) < epsilon)
             {
+                pBoxRes.Image = Properties.Resources.sides_2;
                 return "Равнобедренный треугольник";
             }
             if (Math.Abs(s3_sq - sumSmallSquares) < epsilon)
             {
+                pBoxRes.Image = Properties.Resources.angle_90;
                 return "Прямоугольный треугольник";
             }
-            if (s3_sq > sumSmallSquares) 
+            if (s3_sq > sumSmallSquares)
             {
+                pBoxRes.Image = Properties.Resources.angle_more_90;
                 return "Тупоугольный треугольник";
             }
             if (s3_sq < sumSmallSquares)
             {
+                pBoxRes.Image = Properties.Resources.angle_below_90;
                 return "Остроугольный треугольник";
             }
 
@@ -164,7 +168,7 @@ namespace TriangleTypeCheck
 
             lblRes.Text = "Ожидание ввода значений...";
 
-            if (pBoxRes.Image != null) 
+            if (pBoxRes.Image != null)
             {
                 pBoxRes.Image.Dispose();
                 pBoxRes.Image = null;
@@ -172,6 +176,6 @@ namespace TriangleTypeCheck
 
         }
 
-       
+
     }
 }
